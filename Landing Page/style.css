@@ -33,18 +33,18 @@ a
 
 .container
 {
-    width: 1440px;
+    /*width: 1440px; */
 }
 
 .container .landing
 {
-    width: 1440px;
+    /*width: 1440px;*/
    /* padding-bottom: 25px;*/
 }
 
 .container .landing .header
 {
-    width: 1440px;
+    /*width: 1440px;*/
     position: static;
     /*position: fixed; */
     padding-top: 30px;
@@ -200,6 +200,7 @@ a
 {
     max-width: 500px;
     color: #343a40;
+    font-size: 20px;
 }
 
 .container .grow .grow-flex img
@@ -214,7 +215,7 @@ a
 
 .container .conver
 {
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 150px;
     padding-left: 150px;
     padding-right: 150px;
@@ -240,13 +241,13 @@ a
     max-width: 530px;
     margin-top: 20px;
     color: #343a40;
+    font-size: 20px;
 }
 
 .container .users
 {
     width: 1440px;
     background: hsl(207, 100%, 98%);
-    margin-top: 100px;
 }
 
 .container .users #bg-top-users
@@ -256,8 +257,8 @@ a
 
 .container .users .users-flex
 {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     padding-left: 150px;
     padding-right: 150px;
     display: flex;
@@ -277,6 +278,7 @@ a
 {
     max-width: 530px;
     color: #343a40;
+    font-size: 20px;
 }
 
 .container .users .users-flex img
@@ -851,3 +853,41 @@ a
         font-size: 14px;
     }
 }
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.row {
+    margin: 20 -5px;
+    box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 16px;
+  text-align: center;
+  color: #343a40;
+  box-sizing: border-box;
+}
+
